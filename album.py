@@ -18,14 +18,14 @@ print("\nNajczesciej pojawiajace sie zespoly:")
 print(najczestsze_zespoly)
 
 # punk 4
-print("\ndf.columns before change 'capitalize':", df.columns)
+print("\ndf.columns przed zmiana 'capitalize':", df.columns)
 df.columns = [col.capitalize() for col in df.columns]
-print("df.columns after cahnge 'capitalize'", df.columns)
+print("df.columns po zmianie 'capitalize'", df.columns)
 
 # punk 5
-print("\ndf.columns before drop 'Max poz':", df.columns)
+print("\ndf.columns przed drop 'Max poz':", df.columns)
 df = df.drop(columns=['Max poz'])
-print("df.columns after drop 'Max poz':", df.columns)
+print("df.columns po drop 'Max poz':", df.columns)
 
 # punk 6
 rok_najwiecej_albumow = df['Rok'].value_counts().idxmax()
